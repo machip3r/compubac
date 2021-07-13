@@ -384,7 +384,7 @@ p {
   text-align: center;
   color: #ffffff;
   background-color: #4a6ca2;
-  clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+  clip-path: polygon(0 9%, 100% 0, 100% 90%, 0 100%);
 }
 
 .gallery-section h1 {
@@ -445,7 +445,7 @@ img {
 
 .gallery_text {
   position: absolute;
-  top: 50%;
+  top: 55%;
   cursor: pointer;
   max-width: 80%;
   text-align: center;
@@ -459,7 +459,7 @@ img {
 
 .gallery_btn {
   position: absolute;
-  top: 70%;
+  top: 75%;
   cursor: pointer;
   max-width: 80%;
   text-align: center;
@@ -1057,7 +1057,7 @@ img {
     padding: 0;
   }
   .footer-logo-container img {
-    width: 60%;
+    width: 70%;
     margin: 0 auto 15px;
   }
   .footer-info-container {
@@ -1096,6 +1096,10 @@ img {
 }
 
 @media screen and (max-width: 800px) {
+  /* GALLERY */
+  .gallery-section {
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+  }
   .gallery_container {
     width: 100%;
     margin-left: auto;
@@ -1235,8 +1239,12 @@ img {
 
 @media screen and (max-width: 550px) {
   /* NAV */
+  .nav-link-cb {
+    height: auto;
+  }
   .nav-logo {
-    width: 200%;
+    width: 210%;
+    max-width: none;
   }
   /* HOME */
   .home-img-container {
@@ -1273,8 +1281,9 @@ img {
   }
   /* GALLERY */
   .gallery-section {
-    padding-bottom: 90px;
-    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 100%);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 80px;
   }
   /* .image-viewer {
     height: 120vw;
@@ -1294,7 +1303,8 @@ img {
     font-size: 2.3em;
   }
   .contact-form-container {
-    margin-top: -50vw;
+    margin-top: -70vw;
+    margin-bottom: 0vw;
   }
   .contact-form input,
   .contact-form textarea {
@@ -1306,6 +1316,11 @@ img {
     width: 80%;
   }
   /* FOOTER */
+  .footer-section {
+    padding-top: 80px;
+    margin-top: -40vw;
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+  }
   .footer-data-container {
     margin-top: 30px;
   }
